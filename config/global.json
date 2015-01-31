@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "babysitter"
+        }, 
+        "babysitter": {
+            "applicationId": "NJFvH3uzP9EHAKydw7iSIICBBU4AfAHvhJzuTawu", 
+            "masterKey": "zuFGY3s646MsIyEYhwJdqbhz3ZiHuMU5YXAo5z9W"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}
