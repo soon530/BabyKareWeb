@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>BDAS</title>
+    <style>
+    body { font-family: Helvetica, Arial, sans-serif; }
+    div { width: 800px; height: 400px; margin: 40px auto; padding: 20px; border: 2px solid #5298fc; }
+    h1 { font-size: 30px; margin: 0; }
+    p { margin: 40px 0; }
+    em { font-family: monospace; }
+    a { color: #5298fc; text-decoration: none; }
+    </style>
+	<script src="//www.parsecdn.com/js/parse-1.3.2.min.js"></script>
+	<script>
+		Parse.initialize("NJFvH3uzP9EHAKydw7iSIICBBU4AfAHvhJzuTawu", "L9gqTgUKlTofouW2wLG0EDAsdfR1f16Dk89VtLXI");
+			
+	</script>
+	
+	<script>
+		
+		var sitter = Parse.Object.extend("Sitter");
+		var query = new Parse.Query(sitter);
+		//query.equalTo("babysitterNumber", "S102010532");
+		//query.include("Babysitter");
+		//query.limit(300);
+		//query.equalTo("objectId", "hViiNti8MI");
+		query.find({
+			success: function(results) {
+				var html = "";
+				for (var i = 0; i < results.length; i++) { 
+					var obj = results[i];
+					//alert(obj.id);
+					var address = obj.get("address");
+					var age = obj.get("age");
+					html = html + i + ":物件編號：" + obj.id + ", 地址：" + address + ", 年紀：" + age + "<br>";
+					
+				}
+					document.getElementById("sitters").innerHTML = html;
+
+			},
+			error: function(error) {
+				alert("Error: " + error.code + " " + error.message);
+			}
+	});
+	
+	</script>
+
+	
+  </head>
+  <body>
+    <div>
+      <h1>BabyTone Sitters Verify System</h1>
+
+	  <p id="sitters">  </p>
+	  
+	  
+    </div>
+  </body>
+</html>
