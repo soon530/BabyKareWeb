@@ -18,36 +18,58 @@
 	
 	<script>
 		
-		var sitter = Parse.Object.extend("Sitter");
-		var query = new Parse.Query(sitter);
-		//query.equalTo("babysitterNumber", "S102010532");
-		//query.include("Babysitter");
-		//query.limit(300);
-		//query.equalTo("objectId", "hViiNti8MI");
-		query.find({
-			success: function(results) {
-				var html = "";
-				for (var i = 0; i < results.length; i++) { 
-					var obj = results[i];
-					//alert(obj.id);
-					var address = obj.get("address");
-					var age = obj.get("age");
-					html = html + i + ":物件編號：" + obj.id + ", 地址：" + address + ", 年紀：" + age + "<br>";
-					
-				}
-					document.getElementById("sitters").innerHTML = html;
+		function load() {
+			var sitter = Parse.Object.extend("Sitter");
+			var query = new Parse.Query(sitter);
+			query.equalTo("isVerify", false);
+			//query.equalTo("babysitterNumber", "S102010532");
+			//query.include("Babysitter");
+			//query.limit(300);
+			//query.equalTo("objectId", "hViiNti8MI");
+			query.find({
+				success: function(results) {
+					var html = "";
+					for (var i = 0; i < results.length; i++) { 
+						var obj = results[i];
+						//alert(obj.id);
+						var address = obj.get("address");
+						var age = obj.get("age");
+						
+						html = html + i + ":物件編號：" + obj.id + ", 地址：" + address + ", 年紀：" + age + "<a href=\"javascript:verify('"+obj.id+"');\"+>[審查中]</a>" + "<br>";
+						
+					}
+						document.getElementById("sitters").innerHTML = html;
 
-			},
-			error: function(error) {
-				alert("Error: " + error.code + " " + error.message);
-			}
-	});
+				},
+				error: function(error) {
+					alert("Error: " + error.code + " " + error.message);
+				}
+			});
+		}
+		
+		function verify(objId) {
+					
+			//alert('objId=' + objId);
+			
+			var sitter = Parse.Object.extend("Sitter");
+			var query = new Parse.Query(sitter);
+			query.get(objId, {
+			  success: function(sitter) {
+				sitter.set("isVerify", true);
+				sitter.save();
+				alert('save ok!');
+				load();
+			  },
+			  error: function(object, error) {
+			  }
+			})
+		}
 	
 	</script>
 
 	
   </head>
-  <body>
+  <body onload="javascript:load();">
     <div>
       <h1>BabyTone Sitters Verify System</h1>
 
