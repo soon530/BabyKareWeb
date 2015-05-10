@@ -11,7 +11,7 @@ body {
   color: #444444;
 }
 a {
-  color: #f5d641;
+  color: #3FA9B1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -32,13 +32,13 @@ a:hover {
   margin-right: 5px;
 }
 .btn-theme {
-  background: #f5d641;
-  border: 1px solid #f5d641;
+  background: #3FA9B1;
+  border: 1px solid #3FA9B1;
   color: #fff;
 }
 .btn-theme:hover {
-  background: #c4ab34;
-  border: 1px solid #c4ab34;
+  background: #92D4D2;
+  border: 1px solid #92D4D2;
   color: #fff;
 }
 .btn-theme:active,
@@ -51,7 +51,7 @@ a:hover {
   box-shadow: none;
 }
 .form-control:focus {
-  border-color: #f5d641;
+  border-color: #3FA9B1;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -287,7 +287,7 @@ blockquote {
   vertical-align: middle;
 }
 .header .main-nav button {
-  background: #f5d641;
+  background: #3FA9B1;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -310,7 +310,7 @@ blockquote {
   margin-right: 5px;
 }
 .header .main-nav .nav .nav-item.active a {
-  color: #f5d641;
+  color: #3FA9B1;
   background: none;
 }
 .header .main-nav .nav .nav-item a {
@@ -323,7 +323,7 @@ blockquote {
   padding: 15px 10px;
 }
 .header .main-nav .nav .nav-item a:hover {
-  color: #f5d641;
+  color: #3FA9B1;
   background: none;
 }
 .header .main-nav .nav .nav-item a:focus {
@@ -335,7 +335,7 @@ blockquote {
   background: none;
 }
 .header .main-nav .nav .nav-item.active {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
@@ -357,7 +357,7 @@ blockquote {
   color: #808080;
 }
 .footer .links a:hover {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 /* ======= FlexSlider ======= */
 .flexslider {
@@ -381,17 +381,17 @@ blockquote {
   background: #a1a1a1;
 }
 .flexslider .flex-control-paging li a:hover {
-  background: #f5d641;
+  background: #3FA9B1;
 }
 .flexslider .flex-control-paging li a.flex-active {
-  background: #f5d641;
+  background: #3FA9B1;
 }
 .flexslider .slides li {
   position: relative;
 }
 /* ======= Promo Section ======= */
 .promo {
-  background-color: #f5d641;
+  background-color: #3FA9B1;
   color: #fff;
 }
 .promo .container {
@@ -605,7 +605,7 @@ blockquote {
   position: relative;
   width: 90px;
   height: 90px;
-  border: 3px solid #f5d641;
+  border: 3px solid #3FA9B1;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -621,7 +621,7 @@ blockquote {
   transition: transform ease-out 0.2s, background 0.3s;
 }
 .features .icon:hover {
-  background: #f5d641;
+  background: #3FA9B1;
   color: #fff;
 }
 .features .icon:hover .fa {
@@ -632,7 +632,7 @@ blockquote {
   -o-transform: scale(0.93);
 }
 .features .icon .fa {
-  color: #f5d641;
+  color: #3FA9B1;
   font-size: 48px;
   display: table-cell;
   text-align: center;
@@ -642,7 +642,7 @@ blockquote {
   padding: 30px;
 }
 .features .content .title {
-  color: #f5d641;
+  color: #3FA9B1;
   font-size: 18px;
   margin-top: 0;
 }
@@ -653,7 +653,7 @@ blockquote {
   margin-top: 30px;
 }
 .features .btn-link {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .features .btn-link:hover {
   color: #3fa07a;
@@ -728,7 +728,7 @@ blockquote {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border-bottom: 3px solid #f5d641;
+  border-bottom: 3px solid #3FA9B1;
 }
 .faq .item .question {
   margin-top: 0;
@@ -737,7 +737,7 @@ blockquote {
 }
 .faq .item .question .fa {
   margin-right: 10px;
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .faq .item .answer {
   color: #777777;
@@ -760,7 +760,7 @@ blockquote {
 }
 /* ======= Story Section ======= */
 .story {
-  background-color: #f5d641;
+  background-color: #3FA9B1;
   color: #fff;
   padding: 80px 0;
 }
@@ -780,7 +780,7 @@ blockquote {
   margin-bottom: 15px;
 }
 .story .team .member .name {
-  color: #c4ab34;
+  color: #92D4D2;
   margin-bottom: 0px;
 }
 .story .team .member .title {
@@ -823,7 +823,7 @@ blockquote {
   margin-bottom: 23px;
 }
 .testimonials .item .quote-box .fa {
-  color: #f5d641;
+  color: #3FA9B1;
   font-size: 18px;
   position: absolute;
   left: 30px;
@@ -869,7 +869,7 @@ blockquote {
   color: #999999;
 }
 .testimonials .press .note {
-  color: #f5d641;
+  color: #3FA9B1;
   margin-bottom: 30px;
 }
 .testimonials .press li {
@@ -969,7 +969,7 @@ blockquote {
   margin: 0 auto;
   width: 120px;
   height: 120px;
-  background: #f5d641;
+  background: #3FA9B1;
   color: #fff;
   padding-top: 25px;
   border: 5px solid #9fd9c2;
@@ -1038,7 +1038,7 @@ blockquote {
 }
 .pricing .item .feature-list li .fa {
   margin-right: 5px;
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .pricing .item .feature-list li.disabled {
   color: #999999;
@@ -1048,7 +1048,7 @@ blockquote {
 }
 /* ======= Contact Section ======= */
 .contact {
-  background-color: #f5d641;
+  background-color: #3FA9B1;
   color: #fff;
   padding: 80px 0;
 }
@@ -1076,7 +1076,7 @@ blockquote {
   color: #FFFFFF;
 }
 .contact .intro li a:hover {
-  color: #c4ab34;
+  color: #92D4D2;
 }
 .contact .contact-form .form-control {
   border-color: #fff;
@@ -1084,7 +1084,7 @@ blockquote {
   padding: 10px 15px;
 }
 .contact .contact-form .btn-theme {
-  background-color: #c4ab34;
+  background-color: #92D4D2;
   margin-top: 15px;
 }
 .contact .social-icons {
@@ -1101,7 +1101,7 @@ blockquote {
   padding-bottom: 30px;
 }
 .modal .modal-title {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .modal .modal-body {
   padding: 30px;
@@ -1127,7 +1127,7 @@ blockquote {
 }
 .modal .content ul .fa {
   margin-right: 5px;
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .modal .quote {
   margin: 15px 0;
@@ -1140,7 +1140,7 @@ blockquote {
   font-style: italic;
 }
 .modal .quote .fa {
-  color: #f5d641;
+  color: #3FA9B1;
   margin-right: 10px;
 }
 .modal .quote .people {
@@ -1150,7 +1150,7 @@ blockquote {
   font-style: normal;
 }
 .modal .quote .people .name {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 /* ======= Configure Style ======= */
 .config-wrapper {
@@ -1230,7 +1230,7 @@ blockquote {
   color: #999999;
 }
 .config-panel #device-options a:hover {
-  color: #f5d641;
+  color: #3FA9B1;
 }
 .config-panel #device-options li.active a {
   color: #8dd2b7;
@@ -1251,7 +1251,7 @@ blockquote {
   border: 2px solid #fff;
 }
 .config-panel #color-options li.theme-1 a {
-  background: #f5d641;
+  background: #3FA9B1;
 }
 .config-panel #color-options li.theme-2 a {
   background-color: #28a5a8;
