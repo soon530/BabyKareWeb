@@ -31,7 +31,6 @@
 	<meta property="og:image" content="http://www.babytone.cc/babytonefb.png"/>
 	<meta property="og:description" content="您只需要拿起你的手機，BabyCare就會自動幫您找出您附近的保母，讓您以更直覺、更快速的方式，找到您理想中的保母。" />
 	<meta property="og:url" content="http://www.babytone.cc"/>
-	
 </head> 
 
 <body data-spy="scroll">
@@ -260,17 +259,17 @@
                     <form class="form">                
                         <div class="form-group name">
                             <label class="sr-only" for="name">Name</label>
-                            <input id="name" type="text" class="form-control" placeholder="姓名:">
+                            <input id="name" type="text" class="form-control" placeholder="姓名: 方便與您聯絡時的稱呼">
                         </div><!--//form-group-->
                         <div class="form-group email">
                             <label class="sr-only" for="email">Email</label>
-                            <input id="email" type="email" class="form-control" placeholder="Email:">
+                            <input id="email" type="email" class="form-control" placeholder="聯絡方式: 電話 或 Email">
                         </div><!--//form-group-->
                         <div class="form-group message">
                             <label class="sr-only" for="message">Message</label>
                             <textarea id="message" class="form-control" rows="6" placeholder="問題與建議:"></textarea>
                         </div><!--//form-group-->
-                        <button type="submit" class="btn btn-lg btn-theme">送出</button>
+                        <button type="button" class="btn btn-lg btn-theme" onclick="sendMail();">送出</button>
                     </form><!--//form-->                 
                 </div><!--//contact-form-->
             </div><!--//row-->
@@ -347,6 +346,8 @@
     <!--[if !IE]>--> 
     <script type="text/javascript" src="assets/js/animations.js"></script> 
     <!--<![endif]-->         
+    <script type="text/javascript" src="assets/js/parse/babycare.js"></script>
+
 </body>
 </html> 
 
